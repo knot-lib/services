@@ -1,4 +1,4 @@
-Service class and copmonent library for kNot Framework.
+Service class and component library for kNot Framework.
 =======================
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/knot-lib/services.svg?style=flat-square)](https://packagist.org/packages/knot-lib/services)
@@ -10,7 +10,7 @@ Service class and copmonent library for kNot Framework.
 
 ## Description
 
-Service class and copmonent library for kNot Framework.
+Service class and component library for kNot Framework.
 
 ## Demo
 
