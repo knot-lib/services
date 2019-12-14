@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace KnotLib\Service\Test;
+
 use PHPUnit\Framework\TestCase;
 use KnotLib\Service\FileSystemService;
 use KnotLib\Kernel\FileSystem\FileSystemInterface;

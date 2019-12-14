@@ -10,7 +10,7 @@ use KnotLib\Exception\KnotPhpException;
 class ServicesException extends KnotPhpException implements ServicesExceptionInterface
 {
     /**
-     * FormInputException constructor.
+     * ServicesException constructor.
      *
      * @param string $message
      * @param int $code

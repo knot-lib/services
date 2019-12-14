@@ -12,6 +12,12 @@ class DI extends DiKeysBase
     /* Component Prefix */
     const COMPONENT                       = self::PREFIX_COMPONENTS;
 
+    /* PSR-7 Server Request Object */
+    const COMPONENT_REQUEST               = self::PREFIX_COMPONENTS . 'request';
+
+    /* PSR-7 Response Object */
+    const COMPONENT_RESPONSE              = self::PREFIX_COMPONENTS . 'response';
+
     //====================================
     // Arrays
     //====================================
@@ -41,7 +47,4 @@ class DI extends DiKeysBase
 
     /* Validation Service */
     const SERVICE_VALIDATION              = self::PREFIX_SERVICES . 'validation';
-
-    /* Request Service */
-    const SERVICE_REQUEST                 = self::PREFIX_SERVICES . 'request';
 }

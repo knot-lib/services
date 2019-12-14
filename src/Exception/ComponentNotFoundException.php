@@ -5,10 +5,10 @@ namespace KnotLib\Service\Exception;
 
 use Throwable;
 
-class ServiceNotFoundException extends ServicesException
+class ComponentNotFoundException extends ServicesException
 {
     /**
-     * ServiceNotFoundException constructor.
+     * ComponentNotFoundException constructor.
      *
      * @param string $service
      * @param int $code
