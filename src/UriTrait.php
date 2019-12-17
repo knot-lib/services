@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace KnotLib\Service;
 
-final class UriTrait
+trait UriTrait
 {
     /**
      * Returns uri
