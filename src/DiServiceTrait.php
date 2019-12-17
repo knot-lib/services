@@ -5,7 +5,7 @@ namespace KnotLib\Service;
 
 use Psr\Container\ContainerInterface as PsrContainerInterface;
 
-use KnotLib\Service\Exception\InterfaceNotImplementedException;
+use KnotLib\Service\Exception\ComponentNotImplementedException;
 use KnotLib\Service\Exception\ServiceNotFoundException;
 
 trait DiServiceTrait
@@ -18,16 +18,17 @@ trait DiServiceTrait
      * @return FileSystemService
      *
      * @throws ServiceNotFoundException
-     * @throws InterfaceNotImplementedException
+     * @throws ComponentNotImplementedException
      */
     public function getFileSystemService(PsrContainerInterface $container) : FileSystemService
     {
-        $service = $container->get(DI::URI_SERVICE_FILESYSTEM);
+        $uri = DI::URI_SERVICE_FILESYSTEM;
+        $service = $container->get($uri);
         if (!$service){
-            throw new ServiceNotFoundException(DI::URI_SERVICE_FILESYSTEM);
+            throw new ServiceNotFoundException($uri);
         }
         if (!($service instanceof FileSystemService)){
-            throw new InterfaceNotImplementedException(DI::URI_SERVICE_FILESYSTEM, FileSystemService::class);
+            throw new ComponentNotImplementedException($uri, FileSystemService::class);
         }
         return $service;
     }
@@ -40,16 +41,17 @@ trait DiServiceTrait
      * @return LoggerService
      *
      * @throws ServiceNotFoundException
-     * @throws InterfaceNotImplementedException
+     * @throws ComponentNotImplementedException
      */
     public function getLoggerService(PsrContainerInterface $container) : LoggerService
     {
-        $service = $container->get(DI::URI_SERVICE_LOGGER);
+        $uri = DI::URI_SERVICE_LOGGER;
+        $service = $container->get($uri);
         if (!$service){
-            throw new ServiceNotFoundException(DI::URI_SERVICE_LOGGER);
+            throw new ServiceNotFoundException($uri);
         }
         if (!($service instanceof LoggerService)){
-            throw new InterfaceNotImplementedException(DI::URI_SERVICE_LOGGER, LoggerService::class);
+            throw new ComponentNotImplementedException($uri, LoggerService::class);
         }
         return $service;
     }
@@ -62,16 +64,17 @@ trait DiServiceTrait
      * @return ValidationService
      *
      * @throws ServiceNotFoundException
-     * @throws InterfaceNotImplementedException
+     * @throws ComponentNotImplementedException
      */
     public function getValidationService(PsrContainerInterface $container) : ValidationService
     {
-        $service = $container->get(DI::URI_SERVICE_VALIDATION);
+        $uri = DI::URI_SERVICE_VALIDATION;
+        $service = $container->get($uri);
         if (!$service){
-            throw new ServiceNotFoundException(DI::URI_SERVICE_VALIDATION);
+            throw new ServiceNotFoundException($uri);
         }
         if (!($service instanceof ValidationService)){
-            throw new InterfaceNotImplementedException(DI::URI_SERVICE_VALIDATION, ValidationService::class);
+            throw new ComponentNotImplementedException($uri, ValidationService::class);
         }
         return $service;
     }

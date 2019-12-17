@@ -10,12 +10,12 @@ class ServiceNotFoundException extends ServicesException
     /**
      * ServiceNotFoundException constructor.
      *
-     * @param string $service
+     * @param string $service_uri
      * @param int $code
      * @param Throwable|NULL $prev
      */
-    public function __construct( string $service, int $code = 0, Throwable $prev = NULL )
+    public function __construct( string $service_uri, int $code = 0, Throwable $prev = NULL )
     {
-        parent::__construct( "Service not installed: $service", $code, $prev );
+        parent::__construct( "Service not installed: $service_uri", $code, $prev );
     }
 }

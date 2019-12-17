@@ -8,7 +8,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use Psr\Container\ContainerInterface as PsrContainerInterface;
 
 use KnotLib\Service\Exception\ComponentNotFoundException;
-use KnotLib\Service\Exception\InterfaceNotImplementedException;
+use KnotLib\Service\Exception\ComponentNotImplementedException;
 
 trait DiComponentTrait
 {
@@ -20,16 +20,17 @@ trait DiComponentTrait
      * @return ServerRequestInterface
      *
      * @throws ComponentNotFoundException
-     * @throws InterfaceNotImplementedException
+     * @throws ComponentNotImplementedException
      */
     public function getRequestComponent(PsrContainerInterface $container) : ServerRequestInterface
     {
-        $component = $container->get(DI::URI_COMPONENT_REQUEST);
+        $uri = DI::URI_COMPONENT_REQUEST;
+        $component = $container->get($uri);
         if (!$component){
-            throw new ComponentNotFoundException(DI::URI_COMPONENT_REQUEST);
+            throw new ComponentNotFoundException($uri);
         }
         if (!($component instanceof ServerRequestInterface)){
-            throw new InterfaceNotImplementedException(DI::URI_COMPONENT_REQUEST, ServerRequestInterface::class);
+            throw new ComponentNotImplementedException($uri, ServerRequestInterface::class);
         }
         return $component;
     }
@@ -42,16 +43,17 @@ trait DiComponentTrait
      * @return ResponseInterface
      *
      * @throws ComponentNotFoundException
-     * @throws InterfaceNotImplementedException
+     * @throws ComponentNotImplementedException
      */
     public function getResponseComponent(PsrContainerInterface $container) : ResponseInterface
     {
-        $component = $container->get(DI::URI_COMPONENT_RESPONSE);
+        $uri = DI::URI_COMPONENT_RESPONSE;
+        $component = $container->get($uri);
         if (!$component){
-            throw new ComponentNotFoundException(DI::URI_COMPONENT_RESPONSE);
+            throw new ComponentNotFoundException($uri);
         }
         if (!($component instanceof ResponseInterface)){
-            throw new InterfaceNotImplementedException(DI::URI_COMPONENT_RESPONSE, ResponseInterface::class);
+            throw new ComponentNotImplementedException($uri, ResponseInterface::class);
         }
         return $component;
     }
