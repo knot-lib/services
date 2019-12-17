@@ -46,12 +46,12 @@ trait DiComponentTrait
      */
     public function getResponseComponent(PsrContainerInterface $container) : ResponseInterface
     {
-        $component = $container->get(DI::URI_COMPONENT_RESPNSE);
+        $component = $container->get(DI::URI_COMPONENT_RESPONSE);
         if (!$component){
-            throw new ComponentNotFoundException(DI::URI_COMPONENT_RESPNSE);
+            throw new ComponentNotFoundException(DI::URI_COMPONENT_RESPONSE);
         }
         if (!($component instanceof ResponseInterface)){
-            throw new InterfaceNotImplementedException(DI::URI_COMPONENT_RESPNSE, ResponseInterface::class);
+            throw new InterfaceNotImplementedException(DI::URI_COMPONENT_RESPONSE, ResponseInterface::class);
         }
         return $component;
     }

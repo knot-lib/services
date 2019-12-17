@@ -9,7 +9,7 @@ final class DI
     // Copmonents
     //==============================
     const URI_COMPONENT_REQUEST        = 'component://request';
-    const URI_COMPONENT_RESPNSE        = 'component://response';
+    const URI_COMPONENT_RESPONSE       = 'component://response';
 
     //==============================
     // Services
