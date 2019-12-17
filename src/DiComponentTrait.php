@@ -24,12 +24,12 @@ trait DiComponentTrait
      */
     public function getRequestComponent(PsrContainerInterface $container) : ServerRequestInterface
     {
-        $component = $container->get(DI::COMPONENT_REQUEST);
+        $component = $container->get(DI::URI_COMPONENT_REQUEST);
         if (!$component){
-            throw new ComponentNotFoundException(DI::COMPONENT_REQUEST);
+            throw new ComponentNotFoundException(DI::URI_COMPONENT_REQUEST);
         }
         if (!($component instanceof ServerRequestInterface)){
-            throw new InterfaceNotImplementedException(DI::COMPONENT_REQUEST, ServerRequestInterface::class);
+            throw new InterfaceNotImplementedException(DI::URI_COMPONENT_REQUEST, ServerRequestInterface::class);
         }
         return $component;
     }
@@ -46,12 +46,12 @@ trait DiComponentTrait
      */
     public function getResponseComponent(PsrContainerInterface $container) : ResponseInterface
     {
-        $component = $container->get(DI::COMPONENT_RESPONSE);
+        $component = $container->get(DI::URI_COMPONENT_RESPNSE);
         if (!$component){
-            throw new ComponentNotFoundException(DI::COMPONENT_RESPONSE);
+            throw new ComponentNotFoundException(DI::URI_COMPONENT_RESPNSE);
         }
         if (!($component instanceof ResponseInterface)){
-            throw new InterfaceNotImplementedException(DI::COMPONENT_RESPONSE, ResponseInterface::class);
+            throw new InterfaceNotImplementedException(DI::URI_COMPONENT_RESPNSE, ResponseInterface::class);
         }
         return $component;
     }
