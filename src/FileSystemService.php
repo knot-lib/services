@@ -5,7 +5,7 @@ namespace KnotLib\Service;
 
 use KNotLib\Kernel\FileSystem\FileSystemInterface;
 
-class FileSystemService extends BaseService
+class FileSystemService
 {
     /** @var FileSystemInterface */
     private $fs;

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotLib\Service;
+namespace KnotLib\Service\Util;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -9,6 +9,7 @@ use Psr\Container\ContainerInterface as PsrContainerInterface;
 
 use KnotLib\Service\Exception\ComponentNotFoundException;
 use KnotLib\Service\Exception\ComponentNotImplementedException;
+use KnotLib\Service\DI;
 
 trait DiComponentTrait
 {

@@ -6,7 +6,7 @@ namespace KnotLib\Service;
 use KnotLib\Validation\ValidationError;
 use KnotLib\Validation\ValidatorInterface;
 
-final class ValidationService extends BaseService
+final class ValidationService
 {
     /** @var ValidatorInterface[] */
     private $validators;

@@ -11,7 +11,7 @@ use KnotLib\Kernel\Logger\LoggerChannelInterface;
 use KnotLib\Kernel\Logger\LoggerInterface;
 use KnotLib\Kernel\Logger\LoggerTrait;
 
-final class LoggerService extends BaseService
+final class LoggerService
 {
     use LoggerTrait;
 
