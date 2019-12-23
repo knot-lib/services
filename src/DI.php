@@ -3,12 +3,8 @@ declare(strict_types=1);
 
 namespace KnotLib\Service;
 
-use KnotLib\Service\Util\ComponentUriTrait;
-
 class DI
 {
-    use ComponentUriTrait;
-
     //==============================
     // Scheme
     //==============================
