@@ -28,7 +28,7 @@ final class PrimeValidator implements ValidatorInterface
         $errors = [];
         if (!self::isPrimeNumber($this->value)){
             // not prime number
-            $errors[] = new ValidationError(0, 'It is not prime number', 'some_field', 'some_field');
+            $errors[] = new ValidationError(0, 'It is not prime number', 'field_name', 'field_code', $this->value);
         }
         return $errors;
     }

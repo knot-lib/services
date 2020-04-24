@@ -28,7 +28,7 @@ final class OddValidator implements ValidatorInterface
         $errors = [];
         if ($this->value % 2 === 0){
             // Its even!
-            $errors[] = new ValidationError(0, 'It is even number', 'some_field', 'some_field');
+            $errors[] = new ValidationError(0, 'It is even number', 'field_name', 'field_code', $this->value);
         }
         return $errors;
     }
