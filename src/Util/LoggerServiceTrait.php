@@ -42,7 +42,7 @@ trait LoggerServiceTrait
             'file' => $file,
             'line' => $line,
         ];
-        $this->getLoggerService()->emergency($message, $context);
+        $this->getLoggerService()->alert($message, $context);
     }
 
     /**
@@ -57,7 +57,7 @@ trait LoggerServiceTrait
             'file' => $file,
             'line' => $line,
         ];
-        $this->getLoggerService()->emergency($message, $context);
+        $this->getLoggerService()->critical($message, $context);
     }
 
     /**
@@ -72,7 +72,7 @@ trait LoggerServiceTrait
             'file' => $file,
             'line' => $line,
         ];
-        $this->getLoggerService()->emergency($message, $context);
+        $this->getLoggerService()->error($message, $context);
     }
 
     /**
@@ -87,7 +87,7 @@ trait LoggerServiceTrait
             'file' => $file,
             'line' => $line,
         ];
-        $this->getLoggerService()->emergency($message, $context);
+        $this->getLoggerService()->warning($message, $context);
     }
 
     /**
@@ -102,7 +102,7 @@ trait LoggerServiceTrait
             'file' => $file,
             'line' => $line,
         ];
-        $this->getLoggerService()->emergency($message, $context);
+        $this->getLoggerService()->notice($message, $context);
     }
 
     /**
@@ -117,7 +117,7 @@ trait LoggerServiceTrait
             'file' => $file,
             'line' => $line,
         ];
-        $this->getLoggerService()->emergency($message, $context);
+        $this->getLoggerService()->info($message, $context);
     }
 
     /**
@@ -132,7 +132,7 @@ trait LoggerServiceTrait
             'file' => $file,
             'line' => $line,
         ];
-        $this->getLoggerService()->emergency($message, $context);
+        $this->getLoggerService()->debug($message, $context);
     }
 
 
