@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotLib\Service\Exception;
+namespace knotlib\service\exception;
 
 use Throwable;
 
-use KnotLib\Exception\KnotPhpException;
+use knotlib\exception\KnotPhpException;
 
 class ServicesException extends KnotPhpException implements ServicesExceptionInterface
 {
@@ -13,11 +13,10 @@ class ServicesException extends KnotPhpException implements ServicesExceptionInt
      * ServicesException constructor.
      *
      * @param string $message
-     * @param int $code
      * @param Throwable|NULL $prev
      */
-    public function __construct(string $message, int $code = 0, Throwable $prev = NULL)
+    public function __construct(string $message, Throwable $prev = NULL)
     {
-        parent::__construct($message, $code, $prev);
+        parent::__construct($message, 0, $prev);
     }
 }

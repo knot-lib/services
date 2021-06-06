@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotLib\Service;
+namespace knotlib\service;
 
-use KnotLib\Validation\ValidationError;
-use KnotLib\Validation\ValidatorInterface;
+use knotlib\validation\ValidationError;
+use knotlib\validation\ValidatorInterface;
 
 final class ValidationService
 {

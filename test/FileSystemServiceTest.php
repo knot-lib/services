@@ -1,20 +1,21 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotLib\Service\Test;
+namespace knotlib\service\test;
 
 use PHPUnit\Framework\TestCase;
-use KnotLib\Service\FileSystemService;
-use KnotLib\Kernel\FileSystem\FileSystemInterface;
-use KnotLib\Kernel\FileSystem\AbstractFileSystem;
-use KnotLib\Kernel\FileSystem\Dir;
+
+use knotlib\service\FileSystemService;
+use knotlib\kernel\filesystem\FileSystemInterface;
+use knotlib\kernel\filesystem\AbstractFileSystem;
+use knotlib\kernel\filesystem\Dir;
 
 final class FileSystemServiceTest extends TestCase
 {
     public function testGetDirectory()
     {
         $svc = new FileSystemService(new class extends AbstractFileSystem implements FileSystemInterface {
-            public function getDirectory(int $dir): string
+            public function getDirectory(string $dir): string
             {
                 $map = [
                     Dir::TMP => '/tmp',
@@ -32,7 +33,7 @@ final class FileSystemServiceTest extends TestCase
     public function testGetFile()
     {
         $svc = new FileSystemService(new class extends AbstractFileSystem implements FileSystemInterface {
-            public function getDirectory(int $dir): string
+            public function getDirectory(string $dir): string
             {
                 $map = [
                     Dir::TMP => '/tmp',
@@ -42,7 +43,7 @@ final class FileSystemServiceTest extends TestCase
                 return $map[$dir] ?? '';
             }
 
-            public function getFile(int $dir, string $file) : string
+            public function getFile(string $dir, string $file) : string
             {
                 $map = [
                     Dir::TMP => 'tmp',

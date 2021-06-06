@@ -1,11 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotLib\Service\Test;
+namespace knotlib\service\test;
 
-
-use KnotLib\Service\ValidationService;
 use PHPUnit\Framework\TestCase;
+
+use knotlib\service\ValidationService;
+use knotlib\service\test\classes\OddValidator;
+use knotlib\service\test\classes\PrimeValidator;
 
 final class ValidationServiceTest extends TestCase
 {

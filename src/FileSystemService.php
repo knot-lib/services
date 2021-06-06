@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotLib\Service;
+namespace knotlib\service;
 
-use KNotLib\Kernel\FileSystem\FileSystemInterface;
+use knotlib\kernel\filesystem\FileSystemInterface;
 
 class FileSystemService
 {
@@ -23,11 +23,11 @@ class FileSystemService
     /**
      * Get system directory
      *
-     * @param int $dir
+     * @param string $dir
      *
      * @return string
      */
-    public function getDirectory(int $dir) : string
+    public function getDirectory(string $dir) : string
     {
         return $this->fs->getDirectory($dir);
     }
@@ -35,12 +35,12 @@ class FileSystemService
     /**
      * Get system file
      *
-     * @param int $dir
+     * @param string $dir
      * @param string $filename
      *
      * @return string
      */
-    public function getFile(int $dir, string $filename) : string
+    public function getFile(string $dir, string $filename) : string
     {
         return $this->fs->getFile($dir, $filename);
     }

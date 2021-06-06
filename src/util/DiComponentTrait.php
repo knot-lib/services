@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotLib\Service\Util;
+namespace knotlib\service\util;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Container\ContainerInterface as PsrContainerInterface;
 
-use KnotLib\Service\Exception\ComponentNotFoundException;
-use KnotLib\Service\Exception\ComponentNotImplementedException;
-use KnotLib\Service\DI;
+use knotlib\service\exception\ComponentNotFoundException;
+use knotlib\service\exception\ComponentNotImplementedException;
+use knotlib\service\DI;
 
 trait DiComponentTrait
 {

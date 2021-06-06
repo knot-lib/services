@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotLib\Service;
+namespace knotlib\service;
 
 use Throwable;
 
-use KnotLib\Kernel\Logger\Channels;
-use KnotLib\Kernel\Logger\LoggerUtil;
-use KnotLib\Kernel\Logger\LoggerChannelInterface;
-use KnotLib\Kernel\Logger\LoggerInterface;
-use KnotLib\Kernel\Logger\LoggerTrait;
+use knotlib\kernel\logger\Channels;
+use knotlib\kernel\logger\LoggerUtil;
+use knotlib\kernel\logger\LoggerChannelInterface;
+use knotlib\kernel\logger\LoggerInterface;
+use knotlib\kernel\logger\LoggerTrait;
 
 final class LoggerService
 {

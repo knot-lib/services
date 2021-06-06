@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotLib\Service;
+namespace knotlib\service;
 
 class DI
 {

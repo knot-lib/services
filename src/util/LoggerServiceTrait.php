@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotLib\Service\Util;
+namespace knotlib\service\util;
 
-use KnotLib\Service\LoggerService;
-use Stk2k\Util\Util;
+use knotlib\service\LoggerService;
+use stk2k\util\Util;
 
 trait LoggerServiceTrait
 {

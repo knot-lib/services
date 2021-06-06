@@ -1,14 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotLib\Service\Test;
+namespace knotlib\service\test;
 
 use Exception;
 
-use KnotLib\Kernel\Logger\Channels;
-use KnotLib\Kernel\Logger\EchoLogger;
-use KnotLib\Service\LoggerService;
 use PHPUnit\Framework\TestCase;
+
+use knotlib\kernel\logger\Channels;
+use knotlib\kernel\logger\EchoLogger;
+use knotlib\service\LoggerService;
 
 final class LoggerServiceTest extends TestCase
 {

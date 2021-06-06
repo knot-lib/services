@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotLib\Service\Test;
+namespace knotlib\service\test\classes;
 
-use KnotLib\Validation\ValidationError;
-use KnotLib\Validation\ValidatorInterface;
+use knotlib\validation\ValidationError;
+use knotlib\validation\ValidatorInterface;
 
 final class PrimeValidator implements ValidatorInterface
 {

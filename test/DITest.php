@@ -1,10 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace KnotLib\Service\Test;
+namespace knotlib\service\test;
 
-use KnotLib\Service\DI;
 use PHPUnit\Framework\TestCase;
+
+use knotlib\service\DI;
 
 final class DITest extends TestCase
 {
