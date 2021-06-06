@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace knotlib\service\test;
+namespace knotlib\services\test;
 
 use PHPUnit\Framework\TestCase;
 
-use knotlib\service\FileSystemService;
+use knotlib\services\FileSystemService;
 use knotlib\kernel\filesystem\FileSystemInterface;
 use knotlib\kernel\filesystem\AbstractFileSystem;
 use knotlib\kernel\filesystem\Dir;

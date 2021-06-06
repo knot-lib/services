@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace knotlib\service\exception;
+namespace knotlib\services\exception;
 
 use Throwable;
 

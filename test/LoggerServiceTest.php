@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace knotlib\service\test;
+namespace knotlib\services\test;
 
 use Exception;
 
@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 use knotlib\kernel\logger\Channels;
 use knotlib\kernel\logger\EchoLogger;
-use knotlib\service\LoggerService;
+use knotlib\services\LoggerService;
 
 final class LoggerServiceTest extends TestCase
 {

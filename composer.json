@@ -12,7 +12,7 @@
   ],
   "require": {
     "php": ">=7.2",
-    "knot-lib/kernel": "~0.1",
+    "knot-lib/kernel": "~0.8",
     "knot-lib/validation": "~0.4"
   },
   "require-dev": {
@@ -22,13 +22,13 @@
   },
   "autoload": {
     "psr-4": {
-      "knotlib\\service\\": "src/"
+      "knotlib\\services\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "knotlib\\service\\test\\": "test/",
-      "knotlib\\service\\test\\classes\\": "test/classes/"
+      "knotlib\\services\\test\\": "test/",
+      "knotlib\\services\\test\\classes\\": "test/classes/"
     }
   }
 }

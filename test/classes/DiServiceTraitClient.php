@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace knotlib\service\test\classes;
+namespace knotlib\services\test\classes;
 
-use knotlib\service\util\DiServiceTrait;
+use knotlib\services\util\DiServiceTrait;
 
 final class DiServiceTraitClient
 {

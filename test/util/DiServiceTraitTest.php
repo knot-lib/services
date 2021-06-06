@@ -1,19 +1,19 @@
 <?php
 declare(strict_types=1);
 
-namespace knotlib\service\test\util;
+namespace knotlib\services\test\util;
 
 use PHPUnit\Framework\TestCase;
 
 use knotlib\kernel\logger\EchoLogger;
-use knotlib\service\LoggerService;
-use knotlib\service\test\classes\DiServiceTraitClient;
-use knotlib\service\test\classes\TestFileSystem;
-use knotlib\service\ValidationService;
+use knotlib\services\LoggerService;
+use knotlib\services\test\classes\DiServiceTraitClient;
+use knotlib\services\test\classes\TestFileSystem;
+use knotlib\services\ValidationService;
 use KnotLib\Di\Container;
-use knotlib\service\DI;
-use knotlib\service\exception\ServiceNotFoundException;
-use knotlib\service\FileSystemService;
+use knotlib\services\DI;
+use knotlib\services\exception\ServiceNotFoundException;
+use knotlib\services\FileSystemService;
 
 final class DiServiceTraitTest extends TestCase
 {

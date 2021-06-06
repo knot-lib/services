@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace knotlib\service\util;
+namespace knotlib\services\util;
 
 use Psr\Container\ContainerInterface as PsrContainerInterface;
 
-use knotlib\service\exception\ComponentNotImplementedException;
-use knotlib\service\exception\ServiceNotFoundException;
-use knotlib\service\DI;
-use knotlib\service\FileSystemService;
-use knotlib\service\LoggerService;
-use knotlib\service\ValidationService;
+use knotlib\services\exception\ComponentNotImplementedException;
+use knotlib\services\exception\ServiceNotFoundException;
+use knotlib\services\DI;
+use knotlib\services\FileSystemService;
+use knotlib\services\LoggerService;
+use knotlib\services\ValidationService;
 
 trait DiServiceTrait
 {

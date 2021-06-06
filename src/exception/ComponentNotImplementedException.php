@@ -1,5 +1,5 @@
 <?php
-namespace knotlib\service\exception;
+namespace knotlib\services\exception;
 
 use Throwable;
 

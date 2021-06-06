@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace knotlib\service\test\classes;
+namespace knotlib\services\test\classes;
 
-use knotlib\service\util\DiComponentTrait;
+use knotlib\services\util\DiComponentTrait;
 
 final class ComponentUriTraitClient
 {

@@ -1,9 +1,9 @@
 <?php /** @noinspection HttpUrlsUsage */
 declare(strict_types=1);
 
-namespace knotlib\service\test\util;
+namespace knotlib\services\test\util;
 
-use knotlib\service\test\classes\DiComponentTraitClient;
+use knotlib\services\test\classes\DiComponentTraitClient;
 use PHPUnit\Framework\TestCase;
 
 use Psr\Http\Message\ResponseInterface;
@@ -13,8 +13,8 @@ use Nyholm\Psr7\Response;
 use Nyholm\Psr7\ServerRequest;
 
 use knotlib\di\Container;
-use knotlib\service\DI;
-use knotlib\service\exception\ComponentNotFoundException;
+use knotlib\services\DI;
+use knotlib\services\exception\ComponentNotFoundException;
 
 final class DiComponentTraitTest extends TestCase
 {
